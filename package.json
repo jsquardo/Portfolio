@@ -1,0 +1,15 @@
+{
+  "name": "portfolio2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch sass/mystyles.scss -o css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.7.4",
+    "node-sass": "^4.11.0"
+  }
+}

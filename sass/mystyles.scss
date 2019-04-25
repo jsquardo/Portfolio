@@ -1,0 +1,36 @@
+@import "../node_modules/bulma/bulma.sass";
+
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700");
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.flex-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+  height: 100vh;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3b444b;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .column {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
