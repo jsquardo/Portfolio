@@ -4,6 +4,14 @@
 
 body {
   font-family: "Karla", sans-serif;
+  height: 100vh;
+  display: flex;
+  background-color: #fcfcfc;
+  // overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 h1 {
@@ -11,31 +19,71 @@ h1 {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-.flex-background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fcfcfc;
-  height: 100vh;
-  text-align: center;
+.columns {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  height: 100%;
+}
 
-  h1 {
-    font-size: 3rem;
-    // font-weight: bold;
-    font-weight: bold;
-    color: #3b444b;
+.purple {
+  color: #8a4af3;
+}
+
+.title {
+  margin-bottom: 0.5rem !important;
+  text-align: left;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  // align-items: center;
+  text-align: left;
+}
+
+.summary {
+  width: 75%;
+  font-size: 1.17rem;
+}
+
+span {
+  font-weight: 700;
+
+  a {
+    color: #8a4af3;
   }
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  // align-items: center;
+  text-align: left;
 
   p {
-    font-size: 1.35rem;
+    margin-top: 0.25rem;
   }
+}
 
-  .column {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.mt {
+  margin-top: 0.25rem;
+}
 
-  .blue {
-    color: rgb(62, 155, 221);
-  }
+.mt5 {
+  margin-top: 0.5rem;
+}
+
+// MAGIC
+.magictime.vanishIn {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.fadeInRightBig {
+  animation-delay: 0.75s;
+  animation-duration: 3s;
 }
