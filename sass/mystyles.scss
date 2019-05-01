@@ -77,6 +77,10 @@ span {
   margin-top: 0.5rem;
 }
 
+.mt2 {
+  margin-top: 3.5rem;
+}
+
 // MAGIC
 .magictime.vanishIn {
   -webkit-animation-duration: 2s;
@@ -86,4 +90,42 @@ span {
 .fadeInRightBig {
   animation-delay: 0.75s;
   animation-duration: 3s;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-mt5 {
+    margin-top: 3rem;
+  }
+  .center-columns {
+    justify-content: center;
+    align-items: center;
+    // padding-left: auto;
+    // padding-right: auto;
+  }
+
+  .title {
+    width: 75%;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    // align-items: center;
+    text-align: left;
+  }
+
+  .second-column {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    // align-items: center;
+    text-align: left;
+
+    p {
+      margin-top: 0.25rem;
+    }
+  }
 }
