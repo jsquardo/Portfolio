@@ -16,7 +16,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/mystyles.css" />
-    <title>Document</title>
+    <script src="../dist/moveTo.min.js"></script>
+    <title>Johnny Squardo</title>
   </head>
   <body>
     <div class="container">
@@ -42,33 +43,50 @@
               </p>
               <span class="purple"
                 ><p class="is-hidden-tablet is-size-4-mobile mt2">
-                  See my projects
+                  <a id="move" href="#target" class="js-trigger"
+                    >See my projects</a
+                  >
                 </p>
               </span>
             </div>
           </div>
         </div>
         <div class="column is-half is-full-mobile">
-          <div class="second-column animated fadeInRightBig center-columns">
+          <div
+            id="target"
+            class="second-column animated fadeInRightBig center-columns"
+          >
             <h2 class="title is-size-2-desktop mobile-mt5">
               Projects
             </h2>
             <div class="summary">
               <p>Some of my smaller projects include</p>
               <div class="mt">
-                <span class="purple"><a href="#">GitFetchApp</a></span>
+                <span class="purple"
+                  ><a href="http://probable-son.surge.sh" target_blank
+                    >GitFetchApp</a
+                  ></span
+                >
               </div>
               <p>and</p>
               <div class="mt">
-                <span class="purple"><a href="#">VueToDo</a></span>
+                <span class="purple"><a href="#">ReactToDo</a></span>
               </div>
               <p>while</p>
               <div class="mt">
-                <span class="purple"><a href="#">CardShuffler</a></span>
+                <span class="purple"
+                  ><a href="http://full-ice.surge.sh/" target="_blank"
+                    >CardShuffler</a
+                  ></span
+                >
               </div>
               <p>and</p>
               <div class="mt">
-                <span class="purple"><a href="#">React Bookmark</a></span>
+                <span class="purple"
+                  ><a href="http://nosy-territory.surge.sh" target="_blank"
+                    >React Bookmark</a
+                  ></span
+                >
               </div>
               <p>are some of my most recent.</p>
               <p>
@@ -81,6 +99,16 @@
         </div>
       </div>
     </div>
+    <script>
+      window.onload = function () {
+        new.moveTo({
+          tolerance: 0,
+          duration: 800,
+          easing: 'easeOutQuart',
+          container: document.getElementById('move'),
+        }).move(document.getElementById('target'))
+      }
+    </script>
   </body>
 </html>
 

@@ -11,6 +11,7 @@
   "dependencies": {
     "bulma": "^0.7.4",
     "magic.css": "^1.4.1",
+    "moveto": "^1.8.0",
     "node-sass": "^4.11.0"
   }
 }
