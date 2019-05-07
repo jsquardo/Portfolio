@@ -6931,7 +6931,7 @@ body {
   font-family: "Karla", sans-serif;
   height: 100vh;
   display: flex;
-  background-color: #fcfcfc; }
+  background-color: white; }
 
 * {
   box-sizing: border-box; }
@@ -6994,9 +6994,8 @@ span {
   animation-duration: 3s; }
 
 @media screen and (max-width: 480px) {
-  .mobile-mt5 {
-    margin-top: 3rem; }
   .center-columns {
+    display: flex;
     justify-content: center;
     align-items: center; }
   .title {

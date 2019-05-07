@@ -6,7 +6,7 @@ body {
   font-family: "Karla", sans-serif;
   height: 100vh;
   display: flex;
-  background-color: black;
+  background-color: white;
   // overflow: hidden;
 }
 
@@ -93,10 +93,11 @@ span {
 }
 
 @media screen and (max-width: 480px) {
-  .mobile-mt5 {
-    margin-top: 3rem;
-  }
+  // .mobile-mt5 {
+  //   margin-top: 3rem;
+  // }
   .center-columns {
+    display: flex;
     justify-content: center;
     align-items: center;
     // padding-left: auto;
